@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+        body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: rgb(247, 196, 220);
+         line-height: 1.75;
+        }
+    
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #eee7f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(112, 104, 104);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1{
+            color: #932bb3;
+        }
+        
+        h2{
+            color: #272626;
+        }
+
+        ul{
+            color: #000000;
+        }
+        
+        .card {
+            background-color: hsl(300, 18%, 97%);
+            border-top: 5px solid rgb(194, 30, 194);
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(105, 40, 119);
+        }
+        .card.module-2 {border-top: 5px solid #0099ffd5;}
+        .card.module-3 {border-top: 5px solid #ff0000;}
+        
+        .box{
+             background-color: #f8f5f8;
+            border: 2px solid hsl(0, 73%, 53%);
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        .text-color-pink{
+            color: #ff0000;
+        }
+        
+        .note{
+            font-style: italic;
+            color: #000000;
+            border-left: 4px solid #ad13ad;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        .note::before {
+            content: "💡";
+        }
+        .H1{
+    
+        text-align: left;
+            color: rgb(32, 30, 32);
+        }
+        .back-link {
+         /* display: lnline-block; */
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        background-color: rgb(225, 202, 243);
+        text-align: center;
+        border-radius: 10px;
+        padding: 8px 0px;
+    }
+    .back-link:hover {
+        /* text -decoration: underline */
+        text-decoration: underline;
+        color: rgb(183, 0, 255);
+        background-color: rgb(255, 255, 255);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <!--card 1 --> 
+    <header>
+        <h1>Workshop: HTML Text Formatting</h1>
+        <p>ฝึกใช้แท็กรูปแบบขอ้ความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+    </header>
+    <main>
+        <div class="card">
+            <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น </p>
+            <ul>
+                <li>&lt;b&gt;<b class="text-color-pink">-ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt;-<strong class="text-color-pink">ตัวหนาแบบ “สำคัญ” เชิงความหมาย</strong> (semantic importance)</li>
+                <li>&lt;i&gt;<i class="text-color-pink">-ตัวเอียง (ใช้กับศัพท์เฉพาะหรือคำเน้น)</i></li>
+                <li>&lt;em&gt;<em class="text-color-pink">-ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt;<u class="text-color-pink">-ขีดเส้นใต้ ้</u></li>
+                <li>&lt;mark&gt;<mark class="text-color-pink">-ไฮไลต์ข้อความ</mark></li>
+                <li>&lt;code&gt;<code class="text-color-pink">-แสดงข้อความเป็นรูปแบบโค้ด</code></li>
+                <li>&lt;small&gt;<small class="text-color-pink">-ข้อความขนาดเล็ก</small></li>
+                <li>&lt;del&gt;<del class="text-color-pink">-ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt;<s class="text-color-pink">-ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt;-ตัวห้อยเช่น H<sub class="text-color-pink"><sud>2</sub>O </li>
+                <li>&lt;sup&gt;-ตัวยกเช่นX<sup class="text-color-pink">2</sup></li>
+            </ul>
+            
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt;-not support in HTML5 </li>
+                    <li>&lt;big&gt;not support</li>
+                    <li>&lt;mark&gt;not support</li>
+                </div>
+                <div class="note">นักศึกษาต้องใช้ Formatting อย่างน้อย 5 ตัวในงานนี้</div>
+             
+        </div>
+
+    <div class="class"></div>
+    <!--card 2 -->
+    <div class="card module-2">
+        <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+        <p>ให้ค้นหาเนื้อหาเกี่ยวกับ “เทคโนโลยีคอมพิวเตอร์สมัยใหม่” โดยต้องมี:</p>
+        <ul>
+            <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+            <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+            <li>ใช้แท็ก formatting อย่างน้อย 5 ประเภท</li>
+            <li>ข้อความไหนมีการจัด formatting ให้ใส่ข้อความเป็นสีแดงชมพู</li>
+        </ul>
+        
+    </div>
+    <!--card 3 -->
+    <div  class="card module-3">
+       <h1 class="H1">เทคโนโลยีคอมพิวเตอร์สมัยใหม่</h1>
+       <p>
+        <strong class="text-color-pink">ปัญญาประดิษฐ์ (Artificial Intelligence)</strong>
+        เทคโนโลยีคอมพิวเตอร์สมัยใหม่มีการใช้ <u class="text-color-pink">ปัญญาประดิษฐ์ (AI) </u>เพื่อวิเคราะห์ข้อมูลและทำงานอัตโนมัติช่วยเพิ่ม<b class="text-color-pink"> ความรวดเร็ว</b> และ<b class="text-color-pink"> ความแม่นยำ </b>โดยพัฒนาโดยองค์กรอย่าง OpenAI
+        </p>
+
+      <strong class="text-color-pink">คลาวด์คอมพิวติ้ง (Cloud Computing)</strong>
+      คลาวด์คอมพิวติ้งช่วยให้สามารถ<b class="text-color-pink"> จัดเก็บข้อมูล</b> และ <i class="text-color-pink">ใช้งานโปรแกรมผ่านอินเทอร์เน็ต </i> ได้ทำให้สะดวกประหยัดค่าใช้จ่ายและ <i class="text-color-pink"> เข้าถึงข้อมูลได้จากทุกที่ </i>
+    </p>
+    <p>
+        <strong class="text-color-pink">อินเทอร์เน็ตของสรรพสิ่ง (Internet of Things : IoT)</strong>
+        IoT คือการ<b class="text-color-pink"> เชื่อมต่ออุปกรณ์ต่างๆ </b> เข้าด้วยกันผ่าน<b class="text-color-pink"> เครือข่ายอินเทอร์เน็ต </b> ช่วยให้การใช้ชีวิตและการทำงานมีความ<b class="text-color-pink"> ทันสมัย</b> และ<em class="text-color-pink"> มีประสิทธิภาพมากขึ้น </em>
+  
+    </p>
+
+    </div>
+    </main> 
+       <div class="footer"> </div> 
+       <a href="index.html"class="back-link">&larr; Back to HTML Tutorial</a>
+</footer>
+              
+        </div>
+
+</body>
+</html>
