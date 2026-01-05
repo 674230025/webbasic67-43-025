@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+
+        body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(247, 196, 220);
+        line-height: 2.0;
+    }
+    
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #eee7f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(112, 104, 104);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1{
+            color: #932bb3;
+        }
+        
+        h2{
+            color: #272626;
+        }                    
+        
+        ul{
+            color: #000000;
+        }
+        
+        .card {
+            background-color: hsl(300, 18%, 97%);
+            border-top: 5px solid rgb(194, 30, 194);
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(105, 40, 119);
+        }
+        .card2 {
+            background-color: hsl(300, 18%, 97%);
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            margin-top: 5px;
+            box-shadow: 0 4px 12px rgb(195, 221, 217);        
+        }
+        .card.module-2 {border-top: 5px solid #fffb00;}
+
+        .card.module-3 {border-top: 5px solid #ff0000;}
+
+        .card.module-4 {border-top: 5px solid #1cffff;}
+
+        .card.module-5 {border-top: 5px solid #ff7300;}
+
+        .card.module-6 {border-top: 5px solid #0acf2a;}
+
+        .box{
+            background-color: rgb(186, 220, 207);
+            border: 2px solid hsl(0, 73%, 53%);
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+
+        .text-color-pink{
+            color: #ff0000;
+        }
+        
+        .note{
+            font-style: italic;
+            color: #000000;
+            border-left: 4px solid #ad13ad;
+            padding-left: 10px;
+            margin-top: 15px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        .note::before {
+            content: "💡";
+        }
+
+        .back-link {
+         /* display: lnline-block; */
+        display: block;
+        margin-top: 15px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        background-color: rgb(220, 193, 241);
+        text-align: center;
+        border-radius: 10px;
+        padding: 8px 0px;
+    }
+
+    .back-link:hover {
+        /* text -decoration: underline */
+        text-decoration: underline;
+        color: rgb(204, 2, 255);
+        background-color: rgb(233, 235, 236);
+    }
+
+    .link {
+        margin-top: 15px;
+        text-decoration: none;
+        color: #0abce9;
+        font-weight: bold;
+    }
+
+    .Big{
+        background-color: rgb(255, 231, 231); 
+        border-left: #ae13eb 5px solid; 
+        font-size: 16px;
+        padding: 5px 20px;
+        }
+
+    .p1{
+        color: #8b8d8f;
+    }
+
+    .imge-link img{
+        width: 260px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+    .imge-link img:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgb(0, 0, 0, 0, 20);
+    }
+
+    .back-links{
+        color: #b042cc;
+        text-decoration: none;
+        background-color: rgb(214, 147, 1) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(248, 37, 0);
+    }
+
+    .back-linkss:hover{
+        color: #b700ff;
+        text-decoration: none;
+        background-color: rgb(22, 245, 226);
+        /* text-decoration : unferline */
+    } 
+
+    .Fs{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(35, 187, 187) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(0, 255, 213);
+    }
+
+    .Fs:hover{
+        color: #000000;
+        text-decoration: none;
+        background-color: rgb(43, 219, 190);       
+    }
+
+    .Fs1{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(240, 152, 51) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(255, 141, 11);
+    }
+
+    .Fs1:hover{
+        color: #000000;
+        text-decoration: none;
+        background-color: rgb(247, 165, 13);       
+    }
+
+    .Gtt {
+    background-color: #dbd8d8;
+    border: 1px solid #ffffff;
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 6px; 
+}
+
+    .Gtt:hover {
+    background-color: #c8b9d6;
+}
+
+.Fs3{
+    display: block;
+    margin-top: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: rgb(201, 69, 228) ;
+    display:inline-block;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgb(204, 0, 255);
+    }
+
+    .Fs3:hover{
+        color: #000000;
+        text-decoration: none;
+        background-color: rgb(235, 95, 235); 
+    }
+
+    .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+    .grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+<div class="card-grid">
+    
+
+        <!--card 1 -->
+        <header>
+        <h1>Workshop: Various Links</h1>
+        <p>เรียนรูปลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
+            </header>
+            <main>
+        <div class="card">
+            <h2>1. External Links</h2>
+            <div class="card2">
+                <a href=""class="link">Visit Wikipedia</a>
+                <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
+            </div>
+            <div class="card2">
+                <a href=""class="link">Visit Google</a>
+                <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
+            </div>
+        </div>
+        
+            <div class="class"></div>
+            <!--card 2 -->
+            <div class="card module-2">
+        <h2>2. Internal Links & Anchor Link</h2>
+        <pre class="Big">
+        &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+        &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+        &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+        </pre>
+        <a href="#jump">Cilck to Jump</a>
+        <h2 id="jump"style="margin-top:300">This is the jump target.</h2>
+            </div>
+        
+            <!--card 3 -->
+            <div  class="card module-3">
+        <h2>3. Email Links</h2>
+        <pre class="Big">
+        &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+        Send an Email
+        &lt;/a&gt;
+        </pre>
+        <a href="674230025@webmail.npru.ac.th?subject=Hello">Send an Email</a>
+            </div>
+        
+            <!--card 4 -->
+            <div  class="card module-4">
+        <h2>4. Download Linsks</h2>
+        <pre class="Big">
+        &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;
+        </pre>
+        <a href="dowload-btn" class="">Download Text File</a>
+        <p class="small-note">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง</p>
+            </div>
+</div>
+        
+            <!--card 5 -->
+            <div  class="card module-5">
+                <h2>6. Image Link</h2>
+                <p>คลิ๊กที่รูปภาพเพื่อเปิดลิงค์</p>
+                <pre class="Big">
+                    &lt;a href="https://youtube.com"&gt;
+        &lt;img src="images/sample.jpg" width="250"&gt;
+        &lt;/a&gt;
+        </pre>
+        <a class="image-link" href="https://www.youtube.com/" target="_blank">
+            <img src="image/youtube.png" alt="YouTube" width="200" height="200">
+        </a>
+        <div class="note">หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
+        
+    </div>
+    
+            <!--card 6 -->
+        <div class="card module-6">
+<h2>5. Button Link</h2>
+<p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+<pre class="Big">
+&lt;a href="https://www.example.com" class="btn-link"&gt;
+Visit Website
+&lt;/a&gt;
+</pre>
+<a class="Fs1">Visit Website</a>
+<p class="p1">สร้างปุ่มด้วยแท็ก button</p>
+<pre class="Big">
+&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+- มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+- ผูกกับ DOM (document) โดยตรง
+&lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+- นิยมใช้มากกว่า
+- เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+- ผูกกับ window โดยตรง
+</pre>
+
+<div class="grid-3-col">
+
+<div>
+    <p>ปุ่ม<code class="Big">document</code></p>
+    <button class="">HTML Tutorial</button>
+</div>
+
+<p>ปุ่ม<code class="Big">location</code></p>
+<button class="">Visit Website</button>
+
+<p class="Big">ตัวอย่างปุ่มจาก https://cssnippts.shefail.dve</p>
+<button class="">SUBSCRIBE</button>
+
+<p class="Big">เพิ่มขอบทอง</p>
+<button class="">SUBSCRIBE</button>
+
+<p class="Big">เพิ่มอนิดมชั่นเมื่อชี้ปุ่ม</p>
+<button class="">SUBSCRIBE</button>
+
+<p class="Big">ปุ่มสีดำ ขอบทอง แสงวิ่ง</p>
+<button class="">SUBSCRIBE</button>
+
+        <div class="footer"> </div>
+        <a href="index.html"class="back-link">&larr; Back to HTML Tutorial</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
