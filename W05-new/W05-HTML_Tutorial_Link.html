@@ -15,7 +15,7 @@
     }
     
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             background-color: #eee7f1;
             padding: 20px;
@@ -138,6 +138,7 @@
         border-radius: 12px;
         transition: 0.3s;
     }
+
     .imge-link img:hover{
         transform: scale(1.1);
         box-shadow: 0 4px 12px rgb(0, 0, 0, 0, 20);
@@ -181,79 +182,99 @@
     .Fs1{
         color: #ffffff;
         text-decoration: none;
-        background-color: rgb(240, 152, 51) ;
+        background-color: rgb(39, 187, 39) ;
         display:inline-block;
         text-align: center;
         padding: 10px 24px;
         border-radius: 15px;
-        box-shadow: 0 4px 12px rgb(255, 141, 11);
+        box-shadow: 0 4px 12px rgb(12, 255, 24);
     }
 
     .Fs1:hover{
         color: #000000;
         text-decoration: none;
-        background-color: rgb(247, 165, 13);       
+        background-color: rgb(33, 247, 13);       
     }
 
-    .Gtt {
-    background-color: #dbd8d8;
-    border: 1px solid #ffffff;
-    color: #000;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-right: 6px; 
-}
-
-    .Gtt:hover {
-    background-color: #c8b9d6;
-}
-
-.Fs3{
-    display: block;
-    margin-top: 15px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: rgb(201, 69, 228) ;
-    display:inline-block;
-    text-align: center;
-    padding: 10px 24px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgb(204, 0, 255);
+    .Fs2{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(240, 227, 51) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(255, 251, 11);
     }
 
+    .Fs2:hover{
+        color: #000000;
+        text-decoration: none;
+        background-color: rgb(224, 247, 13);       
+    }
+
+    .Fs3{
+        display: block;
+        margin-top: 15px;
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(201, 69, 228) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(204, 0, 255);
+        }
+    
     .Fs3:hover{
         color: #000000;
         text-decoration: none;
         background-color: rgb(235, 95, 235); 
-    }
+        }
+
+    .Gtt {
+        background-color: #dbd8d8;
+        border: 1px solid #ffffff;
+        color: #000;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-right: 6px; 
+}
+
+    .Gtt:hover {
+        background-color: #c8b9d6;
+}
+
 
     .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
 }
     .grid-3-col {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
 }
 
     </style>
 </head>
 <body>
+
     <div class="container">
 
+        <header>
+            <h1 class="h1">Workshop : various Link </h1>
+            <h3><p>เรียนรู้ลิ้งค์หลายรูปเเบบ พร้อมตัวอย่างเเละเเบบผึกหัด</p></h3>
+        </header>
+        <main>
+            
 <div class="card-grid">
     
 
         <!--card 1 -->
-        <header>
-        <h1>Workshop: Various Links</h1>
-        <p>เรียนรูปลิงค์หลายรูปแบบ พร้อมตัวอย่างและแบบฝึกหัด</p>
-            </header>
-            <main>
         <div class="card">
             <h2>1. External Links</h2>
             <div class="card2">
@@ -266,7 +287,7 @@
             </div>
         </div>
         
-            <div class="class"></div>
+        
             <!--card 2 -->
             <div class="card module-2">
         <h2>2. Internal Links & Anchor Link</h2>
@@ -275,8 +296,8 @@
         &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
         &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
         </pre>
-        <a href="#jump">Cilck to Jump</a>
-        <h2 id="jump"style="margin-top:300">This is the jump target.</h2>
+        <a href="#jump" class="Fs2">Cilck to Jump</a>
+        <h2 id="jump"style="margin-top:30px">This is the jump target.</h2>
             </div>
         
             <!--card 3 -->
@@ -287,8 +308,8 @@
         Send an Email
         &lt;/a&gt;
         </pre>
-        <a href="674230025@webmail.npru.ac.th?subject=Hello">Send an Email</a>
-            </div>
+        <a href="674230025@webmail.npru.ac.th?subject=Hello" class="card.module-3">Send an Email</a>
+        </div>
         
             <!--card 4 -->
             <div  class="card module-4">
@@ -296,22 +317,22 @@
         <pre class="Big">
         &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;
         </pre>
-        <a href="dowload-btn" class="">Download Text File</a>
+        <a href="dowload-btn" class="Fs">Download Text File</a>
         <p class="small-note">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง</p>
             </div>
-</div>
+    </div>
         
             <!--card 5 -->
             <div  class="card module-5">
-                <h2>6. Image Link</h2>
-                <p>คลิ๊กที่รูปภาพเพื่อเปิดลิงค์</p>
-                <pre class="Big">
-                    &lt;a href="https://youtube.com"&gt;
+        <h2>5. Image Link</h2>
+        <p>คลิ๊กที่รูปภาพเพื่อเปิดลิงค์</p>
+        <pre class="Big">
+        &lt;a href="https://youtube.com"&gt;
         &lt;img src="images/sample.jpg" width="250"&gt;
         &lt;/a&gt;
         </pre>
         <a class="image-link" href="https://www.youtube.com/" target="_blank">
-            <img src="image/youtube.png" alt="YouTube" width="200" height="200">
+        <img src="image/youtube.png" alt="YouTube" width="150" height="175">
         </a>
         <div class="note">หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
         
@@ -319,7 +340,7 @@
     
             <!--card 6 -->
         <div class="card module-6">
-<h2>5. Button Link</h2>
+<h2>6. Button Link</h2>
 <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
 <pre class="Big">
 &lt;a href="https://www.example.com" class="btn-link"&gt;
@@ -342,30 +363,39 @@ Visit Website
 
 <div>
     <p>ปุ่ม<code class="Big">document</code></p>
-    <button class="">HTML Tutorial</button>
+    <button class="Ass">HTML Tutorial</button>
 </div>
 
-<p>ปุ่ม<code class="Big">location</code></p>
-<button class="">Visit Website</button>
+<div>
+    <p>ปุ่ม<code class="Big">location</code></p>
+    <button class="Ass">Visit Website</button>
+</div>
 
-<p class="Big">ตัวอย่างปุ่มจาก https://cssnippts.shefail.dve</p>
-<button class="">SUBSCRIBE</button>
+<div>
+    <p class="Big">ตัวอย่างปุ่มจาก https://cssnippts.shefail.dve</p>
+    <button class="Ass">SUBSCRIBE</button>
+</div>
 
-<p class="Big">เพิ่มขอบทอง</p>
-<button class="">SUBSCRIBE</button>
+<div>
+    <p class="Big">เพิ่มขอบทอง</p>
+    <button class="Ass">SUBSCRIBE</button>
+</div>
 
-<p class="Big">เพิ่มอนิดมชั่นเมื่อชี้ปุ่ม</p>
-<button class="">SUBSCRIBE</button>
+<div>
+    <p class="Big">เพิ่มอนิดมชั่นเมื่อชี้ปุ่ม</p>
+    <button class="Ass">SUBSCRIBE</button>
+</div>
 
-<p class="Big">ปุ่มสีดำ ขอบทอง แสงวิ่ง</p>
-<button class="">SUBSCRIBE</button>
+<div>
+    <p class="Big">ปุ่มสีดำ ขอบทอง แสงวิ่ง</p>
+    <button class="Ass">SUBSCRIBE</button>
+</div>
 
         <div class="footer"> </div>
         <a href="index.html"class="back-link">&larr; Back to HTML Tutorial</a>
-        </div>
     </div>
+</div>
 </div>
 
 </body>
 </html>
-
