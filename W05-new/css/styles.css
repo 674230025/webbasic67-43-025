@@ -1,0 +1,122 @@
+/* CSS Global  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(255, 220, 247);
+  color: black;
+}
+/*---------------------------------------------------------*/
+.container {
+    max-width: 1200px;
+    background-color: rgb(255, 208, 215);
+    margin: 200px auto 20px;
+}
+
+/* Card base */
+.card {
+            background-color: hsl(300, 18%, 97%);
+            border-top: 5px solid rgb(194, 30, 194);
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            box-shadow: 0 4px 12px rgb(105, 40, 119);
+    }
+        .card.module-1 {border-top: 5px solid #0059ff;}
+
+        .card.module-2 {border-top: 5px solid #fffb00;}
+
+        .card.module-3 {border-top: 5px solid #ff0000;}
+
+        .card.module-4 {border-top: 5px solid #1cffff;}
+
+        .card.module-5 {border-top: 5px solid #ff7300;}
+
+        .card.module-6 {border-top: 5px solid #0acf2a;}
+
+pre {
+}
+
+.note {
+}
+
+.note::before {
+}
+
+code {
+  background-color: rgb(197, 197, 197);
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.badge {
+}
+
+/* Images (global safe defaults) */
+img {
+}
+
+/* CSS For Group 1: Header  */
+header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(173, 90, 241);
+/* fixed Header  */
+position: fixed;
+top: 0;
+width: 100%;
+}
+h1 {
+  color: rgb(174, 0, 218);
+}
+.list-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.list-menu li {
+  background-color: rgb(153, 185, 228);
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.list-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+j}
+.list-menu li:hover {
+  background-color: rgb(99, 160, 218);
+}
+/* CSS For Group 2: Card 1: Basics  */
+
+/* CSS For Group 3: Card 2: Resize & aspect  */
+.positon {
+}
+
+.img_small {
+  width: 10%;
+}
+
+/* CSS For Group 4: Card 3: Object fit  */
+
+/* CSS For Group 5: Card 4: Image as Link  */
+
+/* CSS For Group 6: Card 5: Gallery  */
+
+/* CSS For Group 7: Card 6: Responsive  */
+
+/* CSS For Group 8: Card 7: Figure & Caption + Task  */
+
+/* CSS For Group 9: Card 8: Local file tips  */
+
+/* CSS For Group 10: Back to Tutorial */
