@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 รายงานผลเกรด</title>
+    <style>
+        body{
+            background-color: #9e68f7;
+            line-height: 1.6;
+        }
+        header {
+    background-color: #c39ffc;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px;   
+
+    }
+        .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    padding: 15px 35px;
+    margin-bottom: 40px;
+    width: 900px;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    
+    }
+        .card2 {
+    background-color: hsl(300, 18%, 97%);
+    border-radius: 8px;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    
+}
+        .card3 {
+    background-color: hsl(0, 80%, 61%);
+    border-radius: 8px;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    box-shadow:0 4px 12px #ffa068;
+    text-align: center;
+    font-size: 40px;
+        }
+        .c1 {
+            font-size: 40px;
+        }
+        .c2 {
+            font-size: 32px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        .c3 {
+            font-size: 24px;
+        }
+
+        .container {
+    max-width: 1000px;
+    margin: 0px auto ;
+    }
+    
+        .wo {
+    border-radius: 8px;
+    padding: 15px auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+        }
+
+        .Wo1 {
+    background-color: hsl(219, 96%, 79%);
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    }
+
+        .Wo2{
+    background-color: hsl(300, 73%, 82%);
+    border-radius: 16px;
+    padding: 15px 35px;
+    margin-bottom: 20px;
+    font-size: 32px;
+    }
+
+        .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e6a8f7;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+    .Fs1{
+        color: #ffffff;
+        background-color: hsl(219, 96%, 79%);
+        text-decoration: none;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        
+    }
+    .Fs1:hover{
+        color: #000000;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgb(1, 183, 255);      
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="c1">📖 รายงานผลเกรด</h1>
+    </header>
+        
+    <main class="container">
+        
+        <div class="card">
+            <section class="">
+                <div>
+                    <p class="Wo1">🧑‍🎓 ข้อมูลนักศึกษา</p>
+                </div>
+                <div>
+                    <p class="Wo1">📖 ผลการเรียน</p>
+                </div>
+                <div>
+                    <p class="Wo1">📞 ติดต่อ</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="card2">
+        <section class="Wo2">
+            <div>
+            <h2 class="c2">🧑‍🎓 Mr. Worachet Ainson</h2>
+            </div>
+            <div>
+                <p>รหัสนักศึกษา:</p>
+                <p>ชื่อ-นามสกุล:</p>
+                <p>หมู่เรียน:</p>
+                <p>อาจาร์ยที่ปรึกษา:</p>
+                <p>Github:</p>
+            </div>
+            <img src="image/profile.png" alt="รูปนักศึกษา" class="profile-png">
+        </section>
+        </div>
+
+        <div>
+            <section>
+                <div class="wo">
+                    <pre class="Fs1">
+                        <p class="c3">📖 ปี 1 เทอม 1 : 2.66</p>
+                    </pre>
+                    <pre class="Fs1">
+                        <p class="c3">📖 ปี 1 เทอม 2 : 2.91</p>
+                    </pre>
+                    <pre class="Fs1">
+                        <p class="c3">📖 ปี 2 เทอม 1 : 2.75</p>
+                    </pre>
+
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="card3">
+                <p>เกรดเฉลี่ยสะสม: 2.77</p>
+            </section>
+        </div>
+
+    </main>
+
+    <div class="footer">
+        <p>© 2024 Webmaster by Worachet Ainson. ID 674230025.</p>
+        <p>🏢 Nakhon Pathom Rajabhat University</p>
+    </div>
+</body>
+</html>
