@@ -1,184 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>📖 รายงานผลเกรด</title>
     <style>
-        body{
+        body {
             background-color: #9e68f7;
             line-height: 1.6;
+            margin: 0;
+            font-family: sans-serif;
         }
-        header {
-    background-color: #c39ffc;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    margin: 30px;   
 
-    }
-        .card {
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 8px;
-    padding: 15px 35px;
-    margin-bottom: 40px;
-    width: 900px;
-    border-radius: 20px;
-    margin-right: 20px;
-    text-align: center;
-    
-    }
-        .card2 {
-    background-color: hsl(300, 18%, 97%);
-    border-radius: 8px;
-    padding: 15px 35px;
-    margin-bottom: 20px;
-    
-}
-        .card3 {
-    background-color: hsl(0, 80%, 61%);
-    border-radius: 8px;
-    padding: 15px 35px;
-    margin-bottom: 20px;
-    box-shadow:0 4px 12px #ffa068;
-    text-align: center;
-    font-size: 40px;
-        }
-        .c1 {
-            font-size: 40px;
-        }
-        .c2 {
-            font-size: 32px;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-        .c3 {
-            font-size: 24px;
+        header {
+            background-color: #c39ffc;
+            padding: 10px;
+            margin-bottom: 30px;
+
         }
 
         .container {
-    max-width: 1000px;
-    margin: 0px auto ;
-    }
-    
-        .wo {
-    border-radius: 8px;
-    padding: 15px auto;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    margin-right: 20px;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
+            max-width: 980px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 70px;
+            width: 900px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            gap: 20px; 
+            
+
+        }
+
+        .card2 {
+            background-color: hsl(300, 18%, 97%);
+            border-radius: 20px;
+            padding: 15px 35px;
+            margin-bottom: 20px;
+            width: 870px;
+        }
+
+        .card3 {
+            color: #ffffff;
+            background-color: hsl(0, 82%, 58%);
+            border-radius: 12px;
+            padding: 2px 4px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            margin-right: 40px;
+            box-shadow: 2px 8px 19px #ff7424;
+            text-align: center;
+            font-size: 40px;
+            transition: 1.6s;
+        }
+
+        .card3:hover{
+            transform: scale(1.1) translateX(-0.5px);
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .line {
+            border-bottom: 2px solid #ffffff;
+        }
+
+
+
+        .Wo {
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            margin-right: 35px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            gap: 20px;
         }
 
         .Wo1 {
-    background-color: hsl(219, 96%, 79%);
-    padding: 10px 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 3fr 3fr 3fr;
-    }
+            background-color: hsl(219, 96%, 79%);
+            padding: 6px 8px 1px;
+            margin: 5px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            width: 150px;
+            margin-left: 180px;
+            margin-right: -190px;
+        }
 
-        .Wo2{
-    background-color: hsl(300, 73%, 82%);
-    border-radius: 16px;
-    padding: 15px 35px;
-    margin-bottom: 20px;
-    font-size: 32px;
-    }
+
+        .Wo2 {
+            background-color: hsl(300, 73%, 82%);
+            border-radius: 16px;
+            padding: 15px 35px;
+            margin-bottom: 10px;
+            font-size: 32px;
+            width: 530px;
+            margin-top: 10px;
+        }
+
+        .in {
+            font-size: 16px;
+             
+        }
+        .in2 {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            align-items: center;
+        }
+
+
+        img {
+            margin-left: 550px;
+
+        }
+
+        .chet {
+            color: #ffffff;
+            background-color: hsl(219, 96%, 79%);
+            text-align: center;
+            padding: 14px 14px;
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+
+        .chet:hover {
+            background-color: rgb(217, 129, 252);
+            box-shadow: 0 4px 12px rgb(183, 1, 255);
+            transform: translateY(-120px);
+
+        }
+
+        .profile {
+            width: 220px;
+            height: 220px;
+            border-radius: 50000px;
+            margin-top: -999px;
+            border: 2px solid #000000;
+            transform: translateX(85px);
+            margin-bottom: 150px;
+            transition: 1.6s;
+        }
+
+        .profile:hover {
+            box-shadow: 0 4px 12px gray;
+            transform: scale(1.2) translateX(75px);
+
+        }
+
+        code {
+            background-color: rgb(236, 123, 231);
+            border-radius: 6px;
+            padding: 2px 4px;
+        }
+
+        .list-menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 30px;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .list-menu li {
+            margin-top: 20px;
+            transition: transform 0.7 ease;
+        }
+
+        .list-menu li:hover {
+            transform: translateY(-5px)
+        }
+
+        .list-menu a{
+            color: rgb(0, 65, 161);
+            text-decoration: none;
+        }
+
+        
+
+        .Fs1 {
+            color: #ffffff;
+            background-color: hsl(219, 96%, 79%);
+            text-align: center;
+            padding: 8px 10px;
+            border-radius: 15px;
+
+        }
+
+        .Fs1:hover {
+            color: #ff0000;
+            box-shadow: 0 4px 12px rgb(1, 183, 255);
+        }
+
+        .Fs2{
+            display: block;
+            display:inline-block;
+            margin-top: 15px;
+            background-color: rgb(131, 174, 255);
+            text-align: center;
+            padding: 10px 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px hsl(219, 89%, 56%);
+           
+        }
+    
+        .Fs2:hover{
+            color: #000000;
+            background-color: rgb(112, 162, 255); 
+            
+        }
 
         .footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #e6a8f7;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-}
-
-    .Fs1{
-        color: #ffffff;
-        background-color: hsl(219, 96%, 79%);
-        text-decoration: none;
-        display:inline-block;
-        text-align: center;
-        padding: 10px 24px;
-        border-radius: 15px;
+            text-align: center;
+            padding: 10px;
+            background-color: #e6a8f7;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+        .footer2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            
+        }
         
-    }
-    .Fs1:hover{
-        color: #000000;
-        text-decoration: none;
-        box-shadow: 0 4px 12px rgb(1, 183, 255);      
-    }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1 class="c1">📖 รายงานผลเกรด</h1>
-    </header>
-        
+    <div>
+        <header>
+            <h1>📖 รายงานผลเกรด</h1>
+        </header>
+    </div>
     <main class="container">
-        
-        <div class="card">
-            <section class="">
-                <div>
-                    <p class="Wo1">🧑‍🎓 ข้อมูลนักศึกษา</p>
-                </div>
-                <div>
-                    <p class="Wo1">📖 ผลการเรียน</p>
-                </div>
-                <div>
-                    <p class="Wo1">📞 ติดต่อ</p>
-                </div>
-            </section>
-        </div>
+    
+        <section class="card ">
+            <div  class="list-menu">
+                <ul>
+                    <li class="Wo1 chet">
+                        <a href="#s1">🧑‍🎓 ข้อมูลนักศึกษา</a>
+                    </li>
+                    <li class="Wo1 chet">
+                        <a href="#s2">📖 ผลการเรียน</a>
+                    </li>
+                    <li class="Wo1 chet">
+                        <a href="#s3">📞 ติดต่อ</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="card2">
-        <section class="Wo2">
-            <div>
-            <h2 class="c2">🧑‍🎓 Mr. Worachet Ainson</h2>
-            </div>
-            <div>
-                <p>รหัสนักศึกษา:</p>
-                <p>ชื่อ-นามสกุล:</p>
-                <p>หมู่เรียน:</p>
-                <p>อาจาร์ยที่ปรึกษา:</p>
-                <p>Github:</p>
-            </div>
-            <img src="image/profile.png" alt="รูปนักศึกษา" class="profile-png">
+
         </section>
-        </div>
 
-        <div>
-            <section>
-                <div class="wo">
-                    <pre class="Fs1">
-                        <p class="c3">📖 ปี 1 เทอม 1 : 2.66</p>
-                    </pre>
-                    <pre class="Fs1">
-                        <p class="c3">📖 ปี 1 เทอม 2 : 2.91</p>
-                    </pre>
-                    <pre class="Fs1">
-                        <p class="c3">📖 ปี 2 เทอม 1 : 2.75</p>
-                    </pre>
+        <section class="card2" id="s1">
+            <div class="Wo2" >
 
+                <div class="line" >
+                    <h2>🧑‍🎓 Mr. Worachet Ainson</h2>
                 </div>
-            </section>
-        </div>
-        <div>
-            <section class="card3">
-                <p>เกรดเฉลี่ยสะสม: 2.77</p>
-            </section>
-        </div>
 
+                <div class="in">
+                    <div class="in2">
+                        <div><p><strong>📕 รหัสนักศึกษา:</strong></p></div>
+                        <p>674230025</p>
+                    </div>
+                
+                    <div class="in2">
+                        <div><p><strong>🧑‍🎓 ชื่อ-นามสกุล:</strong></p></div>
+                        <p>นาย วรเชษฐ์ อินทศร</p>
+                    </div>
+                
+                    <div class="in2">
+                        <div><p><strong>🎓 หมู่เรียน:</strong></p></div>
+                        <p>67/43</p>
+                    </div>
+                
+                    <div class="in2">
+                        <div><p><strong>👨‍🏫 อาจารย์ที่ปรึกษา:</strong></p></div>
+                        <p>อ.พิชยา สุขปลั่ง</p>
+                    </div>
+                
+                    <div class="in2">
+                        <div><p><strong>🔗 Github:</strong></p></div>
+                        <p><code>https://github.com/674230025/webbasic67-43-025</code></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="img">
+                <img src="imge/profile.png" alt="รูปนักศึกษา" class="profile">
+            </div>
+
+        </section>
+
+        <section >
+            <div class="Wo" id="s2">
+
+                <div class="Fs1">
+                    <p>📖 ปี 1 เทอม 1 : 2.66</p>
+                </div>
+
+                <div class="Fs1">
+                    <p>📖 ปี 1 เทอม 2 : 2.91</p>
+                </div>
+
+                <div class="Fs1">
+                    <p>📖 ปี 2 เทอม 1 : 2.75</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section >
+            <div class="card3">
+                <p> 💡เกรดเฉลี่ยสะสม: 2.77</p>
+            </div>
+        </section>
     </main>
+    <div class="Fs2 footer2 li">
+        <a href="../index.html"> ⬅️Back to HTML Tutorial</a>
+    </div>
 
-    <div class="footer">
+    <div class="footer" id="s3">
         <p>© 2024 Webmaster by Worachet Ainson. ID 674230025.</p>
         <p>🏢 Nakhon Pathom Rajabhat University</p>
     </div>
 </body>
+
 </html>
