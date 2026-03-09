@@ -40,14 +40,19 @@
     <!--Nevder-->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="#">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+            </div>
 
         </div>
 
@@ -59,7 +64,7 @@
     <div class="hero-content">
         <div class="wrapper">
 
-            🚀 เนื้อหาแนะนำสำหรับคุณ
+            <h2 class="hero-title" >🚀 เนื้อหาแนะนำสำหรับคุณ</h2>
 
             <div class="hero-grid">
                 <article class="hero-item">
@@ -104,8 +109,7 @@
             <!--Left side-->
             <main class="post-list">
                 <!-- card 01 -->
-
-                <div class="card">
+                <div class="card order-box-image">
 
                     <p class="card-headline">
                         CATEGORY ARCHIVES:<strong> RESPONSIVE DESIGN</strong>
@@ -140,7 +144,7 @@
 
                 </div>
                 <!-- card 02 -->
-                <div class="card">
+                <div class="card order-box-table">
 
                     <p class="card-headline">
                         CATEGORY ARCHIVES:<strong> CSS DISPLAY PROPERTY</strong>
@@ -221,7 +225,7 @@
                 </div>
 
                 <!-- card 03 -->
-                <div class="card">
+                <div class="card order-box-form" id="contact">
                     <div class="contact-form-card">
                         <div class="contact-title">
                             <h2>📞 ติดต่อเรา</h2>
@@ -275,9 +279,9 @@
                             <div class="form-group">
                                 <label for="interests" class="form-label">ความสนใจเพิ่มเดิม</label>
                                 <div class="form-checkbox-group">
-
-                                    <input type="checkbox" id="interests1" name="interests[]" value="newsletter"><span>ต้องการรับข่าวสารทาง email</span>
-
+                                    <div class="checkbox-item"">
+                                        <input type="checkbox" id="interests1" name="interests[]" value="newsletter"><span>ต้องการรับข่าวสารทาง email</span>
+                                    </div>
                                     <div class="checkbox-item">
                                         <input type="checkbox" id="interests2" name="interests[]" value="consult"><span> สนใจบริการปรึกษา</span>
                                     </div>
@@ -300,97 +304,91 @@
             </main>
 
             <!--Right side-->
-            <aside>
+            <aside class="sideber-widget">
+
                 <!-- widget 01 -->
-                <div class="widget">
+                <div class="widget order-w-intro">
                     สวัสดีครับ ยินดีต้อนรับ
-                    ผมชื่อ Suksawat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ
+                    ผมชื่อ Worachet เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ
                     Startup
                     รูปผู้เขียน
                     <div class="btn-facebook">กดติดตามใน Facebook</div>
                 </div>
 
                 <!-- widget 02 -->
-                <div class="card">
-                    <div class="contect-message-card">
-                        <div class="contact-title-message">
-                            <h3>📧 รับข่าวสารใหม่</h3>
+                <div class="widget order-w-f-green">
+                    
+                    <div class="card">
+                        <div class="contect-message-card">
+                            <div class="contact-title-message">
+                                <h3>📧 รับข่าวสารใหม่</h3>
+                            </div>
+                            <div class="for-group">
+                                <label for="lname" class="for-label-message">ชื่อของคุณ</label>
+                                <input class="fonm-message-input" type="text" id="lname" name="lname"
+                                    placeholder="ใส่ชื่อของคุณ">
+                            </div>
+                    
+                            <div class="for-group">
+                                <label class="for-label-message" for="email">อีเมล </label>
+                                <input class="fonm-message-input" type="text" id="email" name="email"
+                                    placeholder="xxxxxx@gmail.com">
+                            </div>
+                            <div class="for-group">
+                                <label class="for-label-message" for="subject">หัวข้อที่สนใจ รายละเอียด</label>
+                                <select class="fonm-message-select" name="subject" id="subject">
+                                    <option value="หัวข้อ">ทุกหัวข้อ</option>
+                                    <option value="เดียว">หัวข้อเดียว</option>
+                                </select>
+                            </div>
+                            <div class="">
+                                <button class="form-button" type="submit">
+                                    <h3>🚀สมัครเลย!</h3>
+                                </button>
+                            </div>
                         </div>
-
-                        <div class="for-group">
-                            <label for="lname" class="for-label-message">ชื่อของคุณ</label>
-                            <input class="fonm-message-input" type="text" id="lname" name="lname"
-                                placeholder="ใส่ชื่อของคุณ">
-                        </div>
-                        
-                        <div class="for-group">
-                            <label class="for-label-message" for="email">อีเมล </label>
-                            <input class="fonm-message-input" type="text" id="email" name="email"
-                                placeholder="xxxxxx@gmail.com">
-                        </div>
-
-                        <div class="for-group">
-                            <label class="for-label-message" for="subject">หัวข้อที่สนใจ รายละเอียด</label>
-                            <select class="fonm-message-select" name="subject" id="subject">
-                                <option value="หัวข้อ">ทุกหัวข้อ</option>
-                                <option value="เดียว">หัวข้อเดียว</option>
-                            </select>
-                        </div>
-
-                        <div class="">
-                            <button class="form-button" type="submit">
-                                <h3>🚀สมัครเลย!</h3>
-                            </button>
-                        </div>
-
                     </div>
-
+                    
                 </div>
 
                 <!-- widget 03 -->
-                <div class="widget">
-
-                    <div class="card">
-                        <div class="contect-follow-card">
-                            <div class="contact-title-message">
-                                <h3>💬 ติดต่อด่วน</h3>
+                <div class="widget order-w-f-purple">
+                    
+                        <div class="card">
+                            <div class="contect-follow-card">
+                                <div class="contact-title-message">
+                                    <h3>💬 ติดต่อด่วน</h3>
+                                </div>
+                                <div class="for-group">
+                                    <label for="lname" class="for-label-message">ชื่อ</label>
+                                    <input class="fonm-message-input" type="text" id="lname" name="lname"
+                                        placeholder="ชื่อของคุณ">
+                                </div>
+                                <div class="for-group">
+                                    <label class="for-label-message" for="subject">เรื่องที่ต้องการติดต่อ</label>
+                                    <select class="fonm-message-select" name="subject" id="subject">
+                                        <option value="หัวข้อ">เลือกเรื่องที่จะติดต่อ</option>
+                                        <option value="เดียว">แจ้งปัญหา</option>
+                                    </select>
+                                </div>
+                                <div class="for-group">
+                                    <label class="for-label-message" for="detail">ข้อความสั้นๆ</label>
+                                    <textarea class="form-textarea-follow" name="detail" id="detail"
+                                        placeholder="เขียนข้อความคุณที่นี้">
+                                        </textarea>
+                                </div>
+                                <div>
+                                    <button class="form-button" type="submit">
+                                        <h3>📤ส่งเลย</h3>
+                                    </button>
+                                </div>
                             </div>
-
-                            <div class="for-group">
-                                <label for="lname" class="for-label-message">ชื่อ</label>
-                                <input class="fonm-message-input" type="text" id="lname" name="lname"
-                                    placeholder="ชื่อของคุณ">
-                            </div>
-
-                            <div class="for-group">
-                                <label class="for-label-message" for="subject">เรื่องที่ต้องการติดต่อ</label>
-                                <select class="fonm-message-select" name="subject" id="subject">
-                                    <option value="หัวข้อ">เลือกเรื่องที่จะติดต่อ</option>
-                                    <option value="เดียว">แจ้งปัญหา</option>
-                                </select>
-                            </div>
-
-                            <div class="for-group">
-                                <label class="for-label-message" for="detail">ข้อความสั้นๆ</label>
-                                <textarea class="form-textarea-follow" name="detail" id="detail"
-                                    placeholder="เขียนข้อความคุณที่นี้">
-                                    </textarea>
-                            </div>
-
-                            <div>
-                                <button class="form-button" type="submit">
-                                    <h3>📤ส่งเลย</h3>
-                                </button>
-                            </div>
-
                         </div>
-
-                    </div>
-
+                    
                 </div>
 
                 <!-- widget 04 -->
-                <div class="widget">
+                <div class="widget order-w-fb">
                     <div class="facebook-like">
                         กล่อง Facebook Like (ตัวอย่าง)
                         203,779 คนถูกใจ
@@ -398,7 +396,7 @@
                 </div>
 
                 <!-- widget 05 -->
-                <div class="widget">
+                <div class="widget order-w-sponsor">
                     <div class="widget-title">Sponsor</div>
                     <div class="ad-box">พื้นที่โฆษณา / วิดีโอ</div>
                 </div>
@@ -421,7 +419,9 @@
                         <span>mar</span>
                     </div>
                 </header>
-
+                    <div class="imge">
+                    <img src="https://i.redd.it/07373st0exu51.jpg" alt="view photo">
+                    </div>
                 <p class="post-discription">
                     สรุปข้อมูลราคาทองคําแท่งในประเทศชนิด 96.5% เริ่มตั้งแต่ปี 2568 ถึงปีปัจจุบัน 2569
                     โดยเป็นการแสดงราคาต่ำสุด ราคาสูงสุดของทุกๆ เดือน รวมถึง ราคารวมที่ปรับเพิ่มขึ้นหรือลดลงในแต่ละเดือน
@@ -512,27 +512,6 @@
                     </table>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="post-footer">
                     <span>Tags:</span>
                     <a href="">responsive design</a> <span>•</span>
@@ -545,39 +524,34 @@
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--footer-->
     <footer class="footer">
         © 2025 Suksawat — All rights reserved.
         Designed for educational/demo purposes • <a href="">Contact</a>
     </footer>
 
+
+    <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 
 
 </body>
