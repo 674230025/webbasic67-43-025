@@ -125,7 +125,7 @@ a:hover {
 }
 .nav-menu li a:hover,
 .nav-menu li a.active {
-  background-color: #f0f9ff;
+  background-color: #8bcffc;
 }
 .nav-bg{
   background-color: #95dcff;
@@ -137,7 +137,7 @@ a:hover {
     font-size: 1.5rem;
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    background-color: #a8a8ad;
+    background-color: #47a5fd;
     text-decoration: none;
     display: inline-flex;
     justify-content: center;
@@ -147,7 +147,7 @@ a:hover {
     margin-left: 20px 
 }
 .button a:hover{
-    background-color: #a8a8ad;
+    background-color: #79acf8;
     color: rgb(255, 255, 255);
     border: 0px;
     transform: translateY(-5px);
