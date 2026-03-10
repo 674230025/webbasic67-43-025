@@ -130,7 +130,9 @@ a:hover {
 .nav-bg{
   background-color: #95dcff;
 }
-
+/*-----------------------------------------------*/
+/*--button--*/
+/*-----------------------------------------------*/
 .button a{
     font-size: 1.5rem;
     border-radius: 10px;
@@ -149,6 +151,22 @@ a:hover {
     color: rgb(255, 255, 255);
     border: 0px;
     transform: translateY(-5px);
+}
+.Button{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(85, 8, 137) ;
+  display:inline-block;
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+                
+}
+.Button:hover{
+  color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(190, 112, 253);
 }
 /*-----------------------------------------------*/
 /*--Hero--*/
