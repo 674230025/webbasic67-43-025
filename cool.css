@@ -1,0 +1,68 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+    background: #f0f8ff;
+}
+
+h1 {
+    padding: 20px;
+}
+
+/* จัด 4 รูป */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+    padding: 20px;
+    margin: auto; 
+    width: 750px;
+    margin-top: 10px;
+}
+
+/* กล่อง */
+.card {
+    background: rgb(230, 229, 229);
+    padding: 4px 4px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background: rgb(239, 211, 250);
+    padding: 10px;
+}
+
+/* รูป */
+.card img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  font-size: 24px;
+  height: 100px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
