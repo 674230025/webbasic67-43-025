@@ -15,9 +15,9 @@ h1 {
     grid-template-columns: repeat(2, 2fr);
     gap: 15px;
     padding: 20px;
-    margin: auto; 
     width: 750px;
     margin-top: 10px;
+    margin-left: 460px;
 }
 
 /* กล่อง */
