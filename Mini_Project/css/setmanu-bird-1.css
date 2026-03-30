@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: rgb(126, 212, 238);;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 60px;
+    font-weight: 700;
+    box-shadow: 0 4px 14px;
+}
+
+.picture {
+    width: 50px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    margin-top: 20px;
+    
+}
+
+.logo-image {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.logo-image-1 {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px black;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.page {
+    width: 300px;
+    font-size: 24px;
+    margin-top: 100px;
+}
+
+.img-buy {
+    width: 600px;
+    height: 600px;
+}
+
+.menu {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu li a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 8px 15px;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    transform: scale(1.1);
+}
+
+.img-size {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+    box-shadow: 0 2px 12px black;
+}
+
+.name-menu {
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 10px;
+}
+
+.echo {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.echo h2 {
+    background-color:gray;
+    padding: 10px;
+    border-radius: 10px;
+    border-right: 1px solid;
+}
+
+.conferm {
+    background-color: rgb(0, 119, 255);
+    padding: 20px;
+    text-align: center;
+    border-radius: 99px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.conferm a {
+    text-decoration: none;
+    color: black;
+}
+
+.conferm:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 12px black;
+}
